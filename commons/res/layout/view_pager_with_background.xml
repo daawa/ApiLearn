@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apiLearn="http://schemas.android.com/apk/res/play.apilearn"
+    android:id="@+id/frame_container_launch_viewpager"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:scaleType="matrix" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/launch_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <custom.view.BannerIndicator 
+        android:id="@+id/indicator" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal|bottom" 
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"                
+        android:visibility="visible"
+        apiLearn:itemBgColor="#ff00ff00"
+        apiLearn:itemColor="#ff0000ff"
+        apiLearn:itemCount="1"
+        apiLearn:itemIsHollow="false"
+        apiLearn:itemMargin="10dp"
+        apiLearn:itemSize="10dp"/>
+    <ImageView
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top" 
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"/>
+</FrameLayout>
